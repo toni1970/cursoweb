@@ -1,0 +1,42 @@
+<web-app>
+
+	<display-name>TuLibroEnCasa</display-name>
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>SrvValidarEntrada</servlet-name>
+		<servlet-class>tulibro.servlets.SrvValidarEntrada</servlet-class>
+		<load-on-startup>1</load-on-startup>
+		<init-param>
+			<param-name>fichero_propiedades</param-name>
+			<param-value>C:\\ECLIPSE EE\\eclipse\\WORKSPACE\\TuLibroEnCasa\\WebContent\\WEB-INF\\carritodelacompra.properties
+			</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SrvValidarEntrada</servlet-name>
+		<url-pattern>/servlet/SrvValidarEntrada</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>SrvBuscarLibros</servlet-name>
+		<servlet-class>tulibro.servlets.SrvBuscarLibros</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SrvBuscarLibros</servlet-name>
+		<url-pattern>/servlet/SrvBuscarLibros</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>SrvMostrarLibros</servlet-name>
+		<servlet-class>tulibro.servlets.SrvMostrarLibros</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SrvMostrarLibros</servlet-name>
+		<url-pattern>/servlet/SrvMostrarLibros</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

@@ -1,0 +1,38 @@
+<%
+	String user = (String)session.getAttribute("user");
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Documento sin título</title>
+</head>
+<body>
+USUARIO: <b><%=user%</b>
+<center>
+<form id="form1" name="form1" method="post" action="/TuLibroEnCasa/servlet/SrvSeleccionarLibros">
+<h2>RESULTADOS DE LA B&Uacute;SQUEDA</h2>
+<br />
+<br />
+<table>
+	<tr>
+        <td>&nbsp;</td>
+        <td><b>Cantidad</b></td>
+        <td><b>ISBN</b></td>
+        <td><b>T&iacute;tulo</b></td>
+        <td><b>Autor</b></td>
+        <td><b>Categor&iacute;a</b></td>
+        <td><b>Editorial</b></td>    
+        <td><b>PRECIO UNIDAD</b></td>
+	</tr>
+</table>
+<br />
+<br />
+<br />
+<input name="comprar" type="submit" value="Seleccionar" />
+</form>
+</center>
+
+
+</body>
+</html>
